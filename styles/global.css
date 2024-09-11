@@ -32,4 +32,15 @@
 
 body{
   overflow: hidden;
+  font: var(--text);
+  color: var(--text-color-secondary);
+}
+
+h1, h2{
+  color: var(--text-color-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
