@@ -11,7 +11,7 @@ input, textarea, select{
 
 label{
   font: var(--text-sm);
-  color: var(--text-solor-secondary);
+  color: var(--text-color-secondary);
   display: block;
   margin-bottom: .25rem;
 }
@@ -45,4 +45,20 @@ input[type="date"]{
 
 select{
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+.adress .flex{
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+  opacity: .5;
+}
+
+input{
+  &[disabled]{
+    background-color: var(--surface-color-disable);
+    border: 1px solid var(--stroke-color-default);
+    color: var(--text-color-primary);
+  }
 }
