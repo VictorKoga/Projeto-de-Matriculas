@@ -11,7 +11,7 @@
   --text-highlight: #E43A12;
 
   --surface-color-primary: #FFFFFF;
-  --surface-color-secondary: #FEE7F6;
+  --surface-color-secondary: #FEE7D6;
   
   --stroke-color-default: #D6D3D1;
   --stroke-color-highlight: #f3541C;
@@ -28,4 +28,8 @@
   --font-family: "Poppins", sans-serif; 
   --text: 400 1rem/1.5 var(--font-family);  
   --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
+
+body{
+  overflow: hidden;
 }
