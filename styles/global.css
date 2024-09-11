@@ -28,6 +28,8 @@
   --font-family: "Poppins", sans-serif; 
   --text: 400 1rem/1.5 var(--font-family);  
   --text-sm: 400 0.875rem/1.4 var(--font-family);
+
+  zoom: 70%;
 }
 
 body{
