@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --text-color-primary: #292524;
+  --text-color-secondary: #57534E;
+  --text-color-tertiary: #8F8881;
+  --text-highlight: #E43A12;
+
+  --surface-color-primary: #FFFFFF;
+  --surface-color-secondary: #FEE7F6;
+  
+  --stroke-color-default: #D6D3D1;
+  --stroke-color-highlight: #f3541C;
+
+  --semantic-color-error: #DC2626; 
+
+  /* --supporting-orange: #F9A474;
+  --supporting-yellow: #FEDF6F;
+  --supporting-green: #C7D78D;
+  --supporting-blue: #B8CEDC; 
+  --supporting-violet: #C3B2E7;
+  --supporting-pink: #F682A5; */
+
+  --font-family: "Poppins", sans-serif; 
+  --text: 400 1rem/1.5 var(--font-family);  
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
