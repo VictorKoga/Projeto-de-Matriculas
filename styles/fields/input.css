@@ -1,0 +1,88 @@
+
+input, textarea, select{
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid var(--stroke-color-default);
+  padding: .75rem 1rem;
+  font: var(--text);
+}
+
+label{
+  font: var(--text-sm);
+  color: var(--text-color-secondary);
+  display: block;
+  margin-bottom: .25rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input[type="date"]:focus-within{
+  outline: .25rem solid var(--surface-color-secondary);
+  border: .125rem solid var(--stroke-color-highlight);
+  outline-offset: .1px;/*pra aparecer a borda no safari*/
+}
+
+input[type="date"]{
+  position: relative;
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+  
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain; 
+    right: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+select{
+  background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+.adress .flex{
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+  opacity: .5;
+}
+
+input{
+  &[disabled]{
+    background-color: var(--surface-color-disable);
+    border: 1px solid var(--stroke-color-default);
+    color: var(--text-color-primary);
+  }
+
+  &:invalid{
+    border: 0.125rem solid var(--semantic-color-error);
+  }
+
+  &+small{
+    font: var(--text-sm);
+    color: #78716C;
+
+    display: inline-block;
+    margin-top: .25rem;
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: var(--semantic-color-error);
+    margin-top: .25rem;
+  }
+
+  &:not(:focus):valid + .error{
+    display: none;
+  }
+}
